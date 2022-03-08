@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    
+
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 27%, rgba(20, 21, 57, 1) 61%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 27%, rgba(20, 21, 57, 1) 61%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 27%, rgba(20, 21, 57, 1) 61%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 27%, rgba(20, 21, 57, 1) 61%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 0%, rgba(31, 55, 86, 1) 27%, rgba(20, 21, 57, 1) 61%);
+
+height: 100vh;
+
+}
+
+            /*Rule Box styling    */
+.ruleBox{
+    position:absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    padding: 1em;
+
+}
+.rulesAndClose{
+    display: flex; 
+    justify-content: space-between;
+}
+.rulesImg{
+    display: flex;justify-content: center;
+}
+.rulesImg img {
+  width: 80%;
+}
+
+            /*scoreboard and title design    */
+
+
+
+.nameAndScore{
+    border: solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+}
+.titleGame{
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+.scoreBoard{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 40px;
+    display: flex;flex-direction: column;justify-content: space-around;
+    text-align: center;
+    font-size: 0.8em;
+}
+#scoreCounter{
+    font-size: 5em;
+}
+
+                    /*Grid image selector  */
+
+.gridImg{
+    width: 20em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+grid-template-areas: 
+" . paper . scissors ." 
+". . . . . "
+". . rock . ."
+
+;
+
+}
+.paper{
+    grid-area: paper;
+
+}
+.scissors{
+    grid-area: scissors;
+
+}
+.rock{
+    grid-area: rock;
+
+}
+
+/* STYLING FOR RESULT BOX*/
+
+.resultBox{
+    display: flex;justify-content: space-around;
+    border: saddlebrown solid;
+    width: 30%;margin: auto;
+    height: 15em;
+    color: white;
+    animation: resultBoxAnimacion 1s linear forwards;
+visibility: hidden;
+}
+/*@keyframes resultBoxAnimacion {
+    0%{ width: 30%;}
+    100%{ width: 50%;}
+    
+}*/
+
+.resultBox  img{ 
+    height: 8em;
+    padding: 20px;
+    border: white solid 7px;
+    border-radius: 50%;
+    animation: axel 1s linear infinite;
+}
+@keyframes axel {
+    0%{ box-shadow: 0px 0px 0px 0px rgb(240, 105, 105);}
+    100%{    box-shadow: 0px 0px 1px 20px rgb(240, 105, 105);}
+    
+}
+.userPick{
+    display: flex;flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.pcPick{
+    display: flex;flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.btnTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid red;
+}
+.resetBtn{
+    border: solid red;
+}

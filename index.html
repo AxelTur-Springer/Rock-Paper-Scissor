@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ruleBox" id="ruleBox">
+        <div>
+            <div class="rulesAndClose">
+                <p>RULES</p>
+                <button onclick="btnCloseRules()"><img src="/assets/icon-close.svg" alt=""></button>
+            </div>
+            <div class="rulesImg">
+                <img src="/assets/image-rules.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="nameAndScore">
+        <div class="titleGame">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+        <div class="scoreBoard">
+            <p>SCORE</p>
+            <p id="scoreCounter">0</p>
+        </div>
+    </div>
+
+    <div>
+      <div class="gridImg" id="seleccionBox">
+          <div class="paper">
+             <button class="some-class" onclick="selector(`paper`)" id="btn1"><img src="/assets/icon-paper.svg" alt=""></button> 
+          </div>
+          <div class="scissors">
+              <button  class="some-class" onclick="selector(`scissors`)" id="btn2"><img src="/assets/icon-scissors.svg" alt=""></button>
+          </div>
+          <div class="rock">
+              <button  class="some-class" onclick="selector(`rock`)" id="btn3"><img src="/assets/icon-rock.svg" alt=""></button>
+          </div>
+
+      </div>  
+    </div>
+        <div class="resultBox" id="resultBox">
+        <div class="userPick">
+            <p>YOU PICKED</p>
+            <div>
+                <img id="imageUser" src="/assets/icon-scissors.svg" alt="">
+            </div>
+        </div>
+        <div class="btnTxt">
+            <p id="winLose"></p>
+            <button id="rstbtn" class="resetBtn">
+                Try Again
+            </button>
+        </div>
+        <div class="pcPick">
+            <p>THE HOUSE PICKED</p>
+            <div>
+                <img id="imagePc" src="" alt="">
+            </div>
+        </div>
+
+     </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
