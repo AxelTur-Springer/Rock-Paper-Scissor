@@ -31,10 +31,10 @@ let score = 0;
     
     document.querySelectorAll('.some-class').forEach(item => {
         item.addEventListener('click', event => {
-            
-            document.getElementById("imagePc").src= ""
-            document.getElementById("imagePc").style.width="7.2em"
+            document.getElementById("imagePc").src="/assets/800px-Transparent_square.svg.png";
 
+            document.getElementById("imagePc").style.width="7.2em"
+            document.getElementById("imagePc").style.visibility="visible"
             document.getElementById("btnTxt").style.visibility = "hidden"
             
             const userImg = document.getElementById("imageUser")

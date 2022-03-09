@@ -170,7 +170,9 @@ visibility: hidden;
     display: flex;flex-direction: column;
     justify-content: space-around;
     text-align: center;
+ 
 }
+
 
 
 .btnTxt{
@@ -200,7 +202,7 @@ visibility: hidden;
 .userPick{margin-right: 13%;}
 .btnTxt{
 position: absolute;
-top: 50vh;
+top: 25em;
 }
 
 .ruleBox{
