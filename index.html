@@ -35,13 +35,13 @@
     <div>
       <div class="gridImg" id="seleccionBox">
           <div class="paper">
-             <button class="some-class" onclick="selector(`paper`)" id="btn1"><img src="/assets/icon-paper.svg" alt=""></button> 
+             <button class="some-class paperp" onclick="selector(`paper`)" id="btn1"><img src="/assets/icon-paper.svg" alt=""></button> 
           </div>
           <div class="scissors">
-              <button  class="some-class" onclick="selector(`scissors`)" id="btn2"><img src="/assets/icon-scissors.svg" alt=""></button>
+              <button  class="some-class scis" onclick="selector(`scissors`)" id="btn2"><img src="/assets/icon-scissors.svg" alt=""></button>
           </div>
           <div class="rock">
-              <button  class="some-class" onclick="selector(`rock`)" id="btn3"><img src="/assets/icon-rock.svg" alt=""></button>
+              <button  class="some-class rocker" onclick="selector(`rock`)" id="btn3"><img src="/assets/icon-rock.svg" alt=""></button>
           </div>
 
       </div>  
@@ -53,16 +53,16 @@
                 <img id="imageUser" src="/assets/icon-scissors.svg" alt="">
             </div>
         </div>
-        <div class="btnTxt">
-            <p id="winLose"></p>
+        <div class="btnTxt" id="btnTxt">
+            <p id="winLose" class="winlose"></p>
             <button id="rstbtn" class="resetBtn">
                 Try Again
             </button>
         </div>
         <div class="pcPick">
             <p>THE HOUSE PICKED</p>
-            <div>
-                <img id="imagePc" src="" alt="">
+            <div class="pcImgContainer">
+                <img id="imagePc" src="/assets/icon-paper.svg" alt="">
             </div>
         </div>
 

@@ -87,6 +87,7 @@ height: 100vh;
 .gridImg{
     width: 20em;
     margin: auto;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -110,34 +111,54 @@ grid-template-areas:
     grid-area: rock;
 
 }
+.gridImg button{
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+}
+.rocker{
+    border: red 10px solid;
+}
+.scis{ 
+    border: rgb(255, 217, 0) 10px solid;
+  
+}
+.paperp{ 
+    border: blue 10px solid;
+
+}
 
 /* STYLING FOR RESULT BOX*/
 
 .resultBox{
     display: flex;justify-content: space-around;
-    border: saddlebrown solid;
     width: 30%;margin: auto;
     height: 15em;
     color: white;
-    animation: resultBoxAnimacion 1s linear forwards;
 visibility: hidden;
 }
-/*@keyframes resultBoxAnimacion {
+@keyframes resultBoxAnimacion {
     0%{ width: 30%;}
     100%{ width: 50%;}
     
-}*/
+}
 
 .resultBox  img{ 
     height: 8em;
     padding: 20px;
     border: white solid 7px;
     border-radius: 50%;
-    animation: axel 1s linear infinite;
+    animation: winnerAnim 1s linear forwards ;
+    animation: loserAnim 1s linear forwards;
 }
-@keyframes axel {
-    0%{ box-shadow: 0px 0px 0px 0px rgb(240, 105, 105);}
-    100%{    box-shadow: 0px 0px 1px 20px rgb(240, 105, 105);}
+@keyframes winnerAnim {
+    0%{ box-shadow: 0px 0px 0px 0px rgb(44, 185, 0);}
+    100%{    box-shadow: 0px 0px 1px 20px rgb(44, 185, 0);}
+    
+}
+@keyframes loserAnim {
+    0%{ box-shadow: 0px 0px 0px 0px rgb(255, 0, 0);}
+    100%{    box-shadow: 0px 0px 1px 20px rgb(255, 0, 0);}
     
 }
 .userPick{
@@ -150,13 +171,45 @@ visibility: hidden;
     justify-content: space-around;
     text-align: center;
 }
+
+
 .btnTxt{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: solid red;
+    
+    visibility: hidden;
 }
 .resetBtn{
-    border: solid red;
+    padding: 5px;width: 12em;
 }
+.winlose{
+    font-size: 2em;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .nameAndScore{width: 100%;}
+  
+.resultBox{
+    width: 90%;
+    margin: auto;
+}
+.pcPick{margin-left: 13%; }
+.userPick{margin-right: 13%;}
+.btnTxt{
+position: absolute;
+top: 50vh;
+}
+
+.ruleBox{
+    width: 80%;
+    
+
+}
+}
+
+
+
+  
