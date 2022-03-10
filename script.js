@@ -3,7 +3,7 @@ function btnCloseRules(){
     rulebox.style.display="none"
 }
 
-
+alert("fix the mobile animaciion")
 
 let choice;
 function selector(draw){
@@ -37,6 +37,8 @@ let score = 0;
             document.getElementById("imagePc").style.visibility="visible"
             document.getElementById("btnTxt").style.visibility = "hidden"
             
+            document.getElementById("resultBox").style.animation="none"
+
             const userImg = document.getElementById("imageUser")
                 userImg.style.animation = "none"
             const pcImg = document.getElementById("imagePc")
