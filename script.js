@@ -3,7 +3,6 @@ function btnCloseRules(){
     rulebox.style.display="none"
 }
 
-alert("fix the mobile animaciion")
 
 let choice;
 function selector(draw){
